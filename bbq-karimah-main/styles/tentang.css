@@ -1,0 +1,408 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile */
+
+.container {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(../assets/Jangan-Letakkan-Apapun-diatas-Mushaf-al-Quran-e1590114429548.png)
+      no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  color: white;
+}
+
+.hero-teks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  padding-top: 70px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.hero-teks p {
+  width: 70%;
+  margin-top: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.nav.nav-top {
+  background-color: transparent; 
+}
+
+.nav.nav-scrolled {
+  background-color: #333;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav .a a:hover {
+  color: #3498db;
+}
+
+.hero .logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 200px;
+  padding: 8px;
+}
+
+.hero .logo > img {
+  width: 60%;
+}
+
+.a {
+  display: none;
+}
+
+section {
+  order: 3;
+  margin-right: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.visi-teks > h3 {
+  font-weight: 700;
+  font-family: var(--font-subjudul);
+  color: #4caf50;
+}
+
+.visi-teks > p {
+  font-weight: 800;
+  font-size: 15px;
+  font-family: var(--font-paragraf);
+  color: #333333;
+}
+
+.judul-visi > h3 {
+  font-weight: 700;
+  font-family: var(--font-subjudul);
+  color: #4caf50;
+}
+
+.detail-visi {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.detail-visi > div {
+  padding: 20px;
+  background-color: #e0f7fa;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.detail-visi > div:hover {
+  transform: scale(1.05);
+  background-color: #b2ebf2;
+}
+
+.detail-visi > div p {
+  font-family: var(--font-paragraf);
+  color: #333333;
+}
+
+.detail-visi div h4 {
+  font-family: var(--font-subjudul);
+  font-weight: 800;
+  color: #009688;
+}
+
+.misi {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.judul-misi > h3 {
+  font-weight: 700;
+  font-family: var(--font-subjudul);
+  color: #4caf50;
+}
+
+.misi div {
+  padding: 20px;
+  background-color: #ffeb3b;
+}
+
+.misi div h4 {
+  font-weight: 800;
+}
+
+.sertifikasi {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+.judul-sertifikasi > h3 {
+  font-weight: 700;
+  font-family: var(--font-subjudul);
+  text-align: center;
+  padding-bottom: 20px;
+  color: #4caf50;
+}
+
+.sertifikasi div h4 {
+  font-weight: 800;
+  font-family: var(--font-subjudul);
+  color: #00796b;
+}
+
+.sertifikasi div {
+  padding: 20px;
+  background-color: #fff3e0;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s, opacity 1s;
+}
+
+.sertifikasi div.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sertifikasi div i {
+  font-size: 20px;
+  color: #388e3c;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer hr {
+  width: 100%;
+}
+
+@media screen {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 45px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #333333;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #333333;
+  }
+  .menu li > a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/* Small Device */
+@media (min-width: 640px) {
+}
+
+/* Middle Device: iPad/ Tablet */
+@media (min-width: 768px) {
+}
+
+/* Large Device: Macbook */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0px 90px;
+    margin: -30px 45px 20px 45px;
+  }
+  section {
+    visibility: hidden;
+  }
+  .a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-right: 350px;
+  }
+  .a > a {
+    text-decoration: none;
+    color: white;
+  }
+  .hero-teks > p {
+    font-size: 20px;
+    width: 70%;
+  }
+  .hero-teks > h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .visi-misi {
+    padding: 0px 90px;
+  }
+  .visi-teks > h3 {
+    padding-top: 50px;
+  }
+  .detail-visi {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .detail-visi div {
+    width: 40%;
+  }
+  .misi {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .misi div {
+    width: 25%;
+  }
+  .sertifikasi {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  .sertifikasi div {
+    width: 25%;
+  }
+}
+
+/* Extra Large Device: Desktop */
+@media (min-width: 1280px) {
+}

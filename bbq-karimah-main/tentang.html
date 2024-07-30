@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang</title>
+    <link rel="stylesheet" href="./styles/tentang.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let sertifikasiItems = document.querySelectorAll(".sertifikasi div");
+        let observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        });
+
+        sertifikasiItems.forEach((item) => {
+          observer.observe(item);
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const nav = document.querySelector(".nav");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 0) {
+            nav.classList.add("nav-scrolled");
+            nav.classList.remove("nav-top");
+          } else {
+            nav.classList.remove("nav-scrolled");
+            nav.classList.add("nav-top");
+          }
+        });
+      });
+
+      AOS.init();
+    </script>
+    <div class="wrap">
+      <div class="hero">
+        <div class="nav">
+          <section class="top-nav">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+              <div class="menu-button"></div>
+            </label>
+            <ul class="menu">
+              <li><a href="./index.html">Beranda</a></li>
+              <li><a href="./tentang.html">Tentang</a></li>
+              <li><a href="./keunggulan.html">Keunggulan</a></li>
+              <li><a href="./kontak.html">Kontak</a></li>
+            </ul>
+          </section>
+          <div class="logo">
+            <img
+              src="./assets/Screenshot_2024-07-22_114312-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="a">
+            <a href="./index.html">Beranda</a>
+            <a href="./tentang.html">Tentang</a>
+            <a href="./keunggulan.html">Keunggulan</a>
+            <a href="./kontak.html">Kontak</a>
+          </div>
+        </div>
+        <div class="hero-teks">
+          <h1>Tentang Kami</h1>
+          <p>Visi dan Misi Serta Langkah-langkah Sertifikasi Metode Karimah</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="visi-teks" data-aos="zoom-in" data-aos-duration="1000">
+          <h3>Visi:</h3>
+          <h4>
+            “Menjadi lembaga pembelajaran Al-Qur’an terdepan yang memudahkan
+            setiap individu untuk membaca Al-Qur’an dengan cepat, efektif, dan
+            sesuai kaidah, serta berkontribusi dalam mencetak generasi Qur’ani
+            yang berkualitas di seluruh Indonesia.”
+          </h4>
+        </div>
+        <div class="judul-visi" data-aos="fade-left" data-aos-duration="1000">
+          <h3>Detail Visi:</h3>
+        </div>
+        <div class="detail-visi" data-aos="fade-left" data-aos-duration="1000">
+          <div class="visi1" data-aos="fade-left">
+            <h4>1. Lembaga Pembelajaran Al-Qur’an Terdepan</h4>
+            <p>
+              ● Mengukuhkan diri sebagai institusi yang diakui secara luas dan
+              dihormati dalam pendidikan Al-Qur’an.
+            </p>
+            <p>
+              ● Terus berinovasi dan memimpin dalam metode pengajaran Al-Qur’an
+              yang modern dan efektif.
+            </p>
+          </div>
+          <div class="visi2" data-aos="fade-left" data-aos-duration="1000">
+            <h4>2. Kemudahan Pembelajaran untuk Setiap Individu</h4>
+            <p>
+              ● Menyediakan metode pembelajaran yang dapat diakses oleh semua
+              kalangan, baik anak-anak, remaja, dewasa, maupun lansia.
+            </p>
+            <p>
+              ● Mengembangkan bahan ajar yang sederhana, praktis, dan mudah
+              dipahami oleh berbagai tingkat kemampuan.
+            </p>
+          </div>
+          <div class="visi3" data-aos="fade-left" data-aos-duration="1000">
+            <h4>3. Cepat dan Efektif</h4>
+            <p>
+              ● Merancang program yang mempercepat proses belajar membaca
+              Al-Qur’an tanpa mengorbankan kualitas.
+            </p>
+            <p>
+              ● Menyediakan alat bantu belajar dan teknik yang terbukti
+              meningkatkan kecepatan dan efektivitas pembelajaran.
+            </p>
+          </div>
+          <div class="visi4" data-aos="fade-left" data-aos-duration="1000">
+            <h4>4. Sesuai Kaidah</h4>
+            <p>
+              ● Memastikan setiap aspek pengajaran dan pembelajaran sesuai
+              dengan kaidah- kaidah tajwid dan tata cara membaca Al-Qur’an yang
+              benar.
+            </p>
+            <p>
+              ● Melibatkan ahli tajwid dalam pengembangan dan evaluasi metode
+              untuk memastikan akurasi dan kesesuaian dengan standar Al-Qur’an.
+            </p>
+          </div>
+          <div class="visi5" data-aos="fade-left" data-aos-duration="1000">
+            <h4>5. Kontribusi dalam Mencetak Generasi Qur’ani</h4>
+            <p>
+              ● Berperan aktif dalam mencetak generasi yang tidak hanya mampu
+              membaca Al- Qur’an, tetapi juga memahami dan mengamalkan isinya.
+            </p>
+            <p>
+              ● Mendorong nilai-nilai Qur’ani dalam kehidupan sehari-hari siswa.
+            </p>
+          </div>
+          <div class="visi6" data-aos="fade-left" data-aos-duration="1000">
+            <h4>6. Kualitas di Seluruh Indonesia</h4>
+            <p>
+              ● Menyebarkan metode Karimah ke seluruh pelosok Indonesia,
+              memastikan bahwa setiap individu di berbagai daerah memiliki akses
+              ke pembelajaran Al- Qur’an yang berkualitas.
+            </p>
+            <p>
+              ● Membentuk kemitraan dengan lembaga pendidikan formal dan
+              non-formal untuk memperluas jangkauan dan dampak positif metode
+              Karimah.
+            </p>
+          </div>
+        </div>
+        <div class="judul-misi" data-aos="fade-up" data-aos-duration="1000">
+          <h3>Misi:</h3>
+        </div>
+        <div class="misi">
+          <div class="misi1" data-aos="fade-up" data-aos-duration="1000">
+            <h4>Menyebarluaskan Metode Karimah:</h4>
+            <p>
+              Menyediakan panduan belajar Al-Qur’an yang mudah dipahami dan
+              diakses oleh semua kalangan, dari anak-anak hingga dewasa.
+            </p>
+          </div>
+          <div class="misi2" data-aos="fade-up" data-aos-duration="1000">
+            <h4>Pengembangan Konten:</h4>
+            <p>
+              Terus mengembangkan materi pembelajaran yang inovatif dan relevan
+              untuk memenuhi kebutuhan pengguna.
+            </p>
+          </div>
+          <div class="misi3" data-aos="fade-up" data-aos-duration="1000">
+            <h4>Pelatihan Guru:</h4>
+            <p>
+              Menyelenggarakan program pelatihan dan sertifikasi untuk guru Al-
+              Qur’an agar mereka dapat mengajarkan Metode Karimah dengan baik.
+            </p>
+          </div>
+          <div class="misi4" data-aos="fade-up" data-aos-duration="1000">
+            <h4>Peningkatan Kualitas Pembelajaran:</h4>
+            <p>
+              Melakukan monitoring dan evaluasi rutin untuk memastikan
+              efektivitas pembelajaran Al-Qur’an di lembaga mitra.
+            </p>
+          </div>
+          <div class="misi5" data-aos="fade-up" data-aos-duration="1000">
+            <h4>Kolaborasi Strategis:</h4>
+            <p>
+              Bekerjasama dengan lembaga pendidikan dan komunitas untuk
+              memperluas jangkauan dan dampak positif Metode Karimah.
+            </p>
+          </div>
+        </div>
+        <div class="judul-sertifikasi">
+          <h3>Langkah Sertifikasi Metode Karimah</h3>
+        </div>
+        <div class="sertifikasi">
+          <div class="langkah1">
+            <h4>1. Persiapan dan Perencanaan</h4>
+            <p>
+              <i class="ri-check-double-line"></i> Penentuan Standar: Tentukan
+              standar kompetensi yang harus dicapai oleh peserta sertifikasi.
+              Standar ini harus mencakup kemampuan membaca Al-Qur’n dengan benar
+              sesuai kaidah tajwid dan kemampuan mengajar Metode Karimah.
+            </p>
+            <p>
+              <i class="ri-check-double-line"></i> Desain Kurikulum Sertifikasi:
+              Susun kurikulum pelatihan yang mencakup teori dan praktik.
+              Kurikulum ini harus mencakup semua aspek yang diperlukan untuk
+              mencapai standar kompetensi yang ditetapkan.
+            </p>
+            <p>
+              <i class="ri-check-double-line"></i> Pengembangan Materi: Buat
+              materi pelatihan, termasuk modul, buku pegangan, dan bahan ajar
+              lainnya. Pastikan materi ini mudah dipahami dan komprehensif.
+            </p>
+          </div>
+          <div class="langkah2">
+            <h4>2. Pelaksanaan Pelatihan</h4>
+            <p>
+              <i class="ri-check-double-line"></i> Rekrutmen Peserta: Rekrut
+              calon guru atau pengajar yang akan mengikuti program sertifikasi.
+              Peserta dapat berasal dari lembaga pendidikan yang sudah bermitra
+              atau individu yang berminat.
+            </p>
+            <p>
+              <i class="ri-check-double-line"></i> Pelatihan Intensif: Lakukan
+              pelatihan intensif selama beberapa hari yang mencakup teori,
+              praktik, dan micro teaching. Pastikan peserta memahami dan mampu
+              menerapkan Metode Karimah dengan baik.
+            </p>
+            <p>
+              <i class="ri-check-double-line"></i> Pengembangan Materi: Buat
+              materi pelatihan, termasuk modul, buku pegangan, dan bahan ajar
+              lainnya. Pastikan materi ini mudah dipahami dan komprehensif.
+            </p>
+          </div>
+          <div class="langkah3">
+            <h4>3. Proses Sertifikasi</h4>
+            <p>
+              <i class="ri-check-double-line"></i> Penilaian Akhir: Lakukan
+              penilaian akhir berdasarkan hasil evaluasi dan ujian. Pastikan
+              peserta memenuhi standar kompetensi yang telah ditetapkan.
+            </p>
+            <p>
+              <i class="ri-check-double-line"></i> Penilaian Akhir: Lakukan
+              penilaian akhir berdasarkan hasil evaluasi dan ujian. Pastikan
+              peserta memenuhi standar kompetensi yang telah ditetapkan.
+            </p>
+          </div>
+          <div class="langkah4">
+            <h4>4. Pendampingan dan Monitoring</h4>
+            <p>
+              <i class="ri-check-double-line"></i> Pendampingan
+              Pasca-Sertifikasi: Berikan pendampingan kepada guru yang telah
+              tersertifikasi untuk memastikan mereka dapat mengimplementasikan
+              Metode Karimah dengan baik di lembaga mereka.
+            </p>
+            <p>
+              <i class="ri-check-double-line"></i> Monitoring dan Evaluasi:
+              Lakukan monitoring dan evaluasi rutin untuk memastikan kualitas
+              pengajaran tetap terjaga dan membantu guru mengatasi tantangan
+              yang mereka hadapi.
+            </p>
+          </div>
+          <div class="langkah5">
+            <h4>5. Perbaruan Sertifikasi</h4>
+            <p>
+              <i class="ri-check-double-line"></i> Program Pembaruan: Adakan
+              program pembaruan sertifikasi secara berkala (misalnya setiap 2-3
+              tahun) untuk memastikan guru terus mengikuti perkembangan terbaru
+              dan tetap memenuhi standar kompetensi.
+            </p>
+            <p>
+              <i class="ri-check-double-line"></i> Pelatihan Lanjutan: Sediakan
+              pelatihan lanjutan untuk guru yang ingin memperdalam pengetahuan
+              dan keterampilan mereka.
+            </p>
+          </div>
+        </div>
+        <footer>
+          <hr />
+          <p>© 2024 Copyright BBQ Karimah | All right reserved</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
