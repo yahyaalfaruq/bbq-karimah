@@ -13,6 +13,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: -30px;
+  margin-bottom: 20px;
 }
 
 .hero {
@@ -192,6 +193,13 @@ section {
   padding-bottom: 30px;
 }
 
+.bbrp-lembaga h3 {
+  font-family: var(--font-judul);
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
 .lembaga {
   display: flex;
   flex-direction: column;
@@ -223,6 +231,7 @@ section {
 .galeri h3 {
   text-align: center;
   font-family: var(--font-judul);
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -246,6 +255,7 @@ section {
 
 .produk h3 {
   text-align: center;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
@@ -280,6 +290,10 @@ section {
   width: 100%;
 }
 
+.produk .produk-item .bts p {
+  font-weight: 800;
+}
+
 .produk .produk-item div h4 {
   font-family: var(--font-subjudul);
   font-weight: 700;
@@ -305,6 +319,7 @@ section {
 
 .testimoni h3 {
   margin-bottom: 30px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -335,6 +350,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
