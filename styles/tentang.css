@@ -257,14 +257,6 @@ h4 {
   padding: 20px;
   background-color: #fff3e0;
   margin-bottom: 30px;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: transform 1s, opacity 1s;
-}
-
-.sertifikasi div.visible {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .sertifikasi div i {

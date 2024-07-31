@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: -30px
+  margin-top: -30px;
 }
 
 .hero {
@@ -34,6 +34,10 @@ body {
   padding-top: 70px;
   opacity: 0;
   animation: fadeIn 2s forwards;
+}
+
+.hero-teks p {
+  width: 70%;
 }
 
 @keyframes fadeIn {
@@ -139,14 +143,6 @@ section {
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
-}
-
-.hero > h1 {
-  font-family: var(--font-judul);
-}
-
-.hero > p {
-  font-family: var(--font-paragraf);
 }
 
 .hero .logo {
@@ -366,12 +362,13 @@ section {
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.active,
+.accordion:hover {
   background-color: #ccc;
 }
 
 .accordion:after {
-  content: '\002B';
+  content: "\002B";
   color: #777;
   font-weight: bold;
   float: right;
@@ -539,7 +536,7 @@ footer hr {
     align-items: center;
   }
   .pertanyaan-item div {
-    width: 100%
+    width: 100%;
   }
 }
 
