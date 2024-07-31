@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
+  padding: 90px 0px 70px 0px;
   opacity: 0;
   animation: fadeIn 2s forwards;
 }
@@ -470,6 +470,9 @@ footer hr {
     text-align: center;
     gap: 30px;
     margin-right: 350px;
+  }
+  .hero-teks {
+    padding-top: 120px;
   }
   .a > a {
     text-decoration: none;
